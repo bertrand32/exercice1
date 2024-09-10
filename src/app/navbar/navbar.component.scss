@@ -1,0 +1,21 @@
+img{
+    width: 70px;
+    height: 70px;
+}
+.border{
+    width:  71rem;
+    margin-left: 55px;
+    position: relative;
+    bottom: 22px;
+}
+li a{
+    color: #708ca7 !important;
+}
+ li a:hover,
+ .nav-link.active{
+    color: #f5b868 !important;
+}
+form{
+    position: absolute;
+    left: 64%;
+}

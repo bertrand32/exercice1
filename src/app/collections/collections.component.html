@@ -1,0 +1,41 @@
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-5 col-12 col-sm-6 rounded-circle">
+            <img [src]="mainImageUrl" alt="" class="w-100 h-100 rounded-3">
+           <div class="photo d-flex justify-content-between mt-2">
+             <div class="image" (click)="changeMainImage(image1Url)">
+                <img [src]="image1Url" alt="" class="w-100 h-100 rounded">
+             </div>
+             <div class="image" (click)="changeMainImage(image2Url)">
+                <img [src]="image2Url" alt="" class="w-100 h-100 rounded">
+             </div>
+             <div class="image" (click)="changeMainImage(image3Url)">
+                <img [src]="image3Url" alt="" class="w-100 h-100 rounded">
+             </div>
+             <div class="image" (click)="changeMainImage(image4Url)">
+                <img [src]="image4Url" alt="" class="w-100 h-100 rounded">
+             </div>
+           </div>
+        </div>
+        <div class="col-12 col-md-4 col-sm-6 py-5 mt-5 offset-1">
+            <h5 class="text-warning fw-bold">SNEAKER COMPANY</h5>
+            <h1>Fall Limited Edition Sneakers</h1>
+            <span class="">These low-profile sneakers are your perfect casual wear xompamiom.Featuring a durable rubber outer soie,they'll withstand everything the weather can offer</span>
+            <h2 class="mt-3">$125.00 <strong class=" text-warning fs-5 rounded ms-3">50%</strong></h2>
+            <span class="text-decoration-line-through">$250.00</span>
+
+            <div class="cards ms-3 mt-4">
+                <div class="row">
+                   <div class="col-3 d-flex align-items-center justify-content-center fs-4 rounded">
+                      <button class="minus text-warning" (click)="decrement()">-</button>
+                        <span class="mx-4 show text-dark">{{count}}</span>
+                      <button class="plus text-warning" (click)="increment()">+</button>
+                   </div>
+                   <div class="col-5">
+                     <button class="btn-primary d-flex align-items-center justify-content-center rounded"><i class='bx bxs-cart-alt fs-3 mx-4'></i>add cart</button>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
